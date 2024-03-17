@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="hms_doctor_form_view" model="ir.ui.view">
+            <field name="name">hms.doctor.form</field>
+            <field name="model">hms.doctor</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
+                            <field name="image" widget="image"/>
+                        </group>
+                         <group string="patients info">
+                                <field name="patients_ids" widget='many2many_tags' >
+                                    <tree>
+                                        <field name="patient_id" />
+                                    </tree>
+                                    <form>
+                                        <field name="patient_id" />
+                                    </form>
+                                </field>
+                            </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hms_doctor_tree_view" model="ir.ui.view">
+            <field name="name">hms.doctor.tree</field>
+            <field name="model">hms.doctor</field>
+            <field name="arch" type="xml">
+                <tree>
+                         <field name="first_name"/>
+                            <field name="last_name"/>
+                            <field name="image"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+        <record id="hms_doctor_action" model="ir.actions.act_window">
+            <field name="name">Doctors</field>
+            <field name="res_model">hms.doctor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Doctor" id="doctor_menu" parent="hms_root_menu" action="hms_doctor_action" groups="hms.hms_group_admin"/>
+
+    </data>
+</odoo>

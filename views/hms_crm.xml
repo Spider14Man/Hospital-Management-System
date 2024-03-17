@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!--<record id="inheirt_crm_lead_view_form" model="ir.ui.view">-->
+<!--        <field name="name">inheirt.crm.lead.view.form</field>-->
+<!--        <field name="model">crm.lead</field>-->
+<!--        <field name="inherit_id" ref="crm.crm_lead_view_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//group//group[4]//field[@name='day_open']" position="after">-->
+<!--                <field name="related_patient_id"/>-->
+<!--            </xpath>-->
+<!--&lt;!&ndash;            <xpath expr="//group//group[4]//field[@name='day_open']" position="attributes">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <attribute name="required">1</attribute>&ndash;&gt;-->
+<!--&lt;!&ndash;            </xpath>&ndash;&gt;-->
+<!--        </field>-->
+<!--        </record>-->
+    </data>
+</odoo>

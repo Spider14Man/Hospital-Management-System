@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="hms_catagory" model="ir.module.category">
+            <field name="name">HMS Catagory Group</field>
+        </record>
+        <record id="hms_group_user" model="res.groups">
+            <field name="name">Hms User</field>
+            <field name="category_id" ref="hms.hms_catagory"/>
+        </record>
+        <record id="hms_group_admin" model="res.groups">
+            <field name="name">Hms Admin</field>
+            <field name="category_id" ref="hms.hms_catagory"/>
+        </record>
+    </data>
+</odoo>
